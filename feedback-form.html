@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="mystyle.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="toptitle">
+        <h2>Feedback Survey Form</h2>
+        <p><em>Thank you for taking the time to help us improve the platform</em><p>
+        </div>
+        <div class="forms">
+         <form action="submission-success.html">
+           <div id="div-fullname">
+            <label for="fullname">Name</label>
+            <br><input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+           </div>
+
+           <div id="div-email">
+            <br><label for="email">Email</label>
+            <br><input type="email" id="email" name="email" placeholder="Enter your Email" required>
+           </div>
+
+           <div id="div-age">
+            <br><label for="age">Age (optional)</label>
+            <br><input type="text" id="age" name="age" placeholder="Enter your Age" required</input>
+           </div>
+
+           <div id="div-currentrole">
+            <br><label for="currentrole">Which option best describes your current role?</label>
+            <br><input type="text" id="currentrole" name="currentrole" placeholder="Select current role" required>
+           </div>
+
+           <div class="div-recommend">
+             <br><label for="recommendation">Would you recommend the program to a friend?</label>
+             <br><input type="radio" id="radio-definitely" name="recommendation" value="definitely">  Definitely</input>
+             <br><input type="radio" id="radio-maybe" name="recommendation" value="maybe">  Maybe</input>
+             <br><input type="radio" id="radio-notsure" name="recommendation" value="notsure">  Not sure</input>
+           </div>
+
+           <div id="div-feature">
+            <br><label for="feature">What is your favorite feature of the program?</label>
+            <br>
+            <select name="feature" id="feature">
+              <option value="chooseanoption">Choose an option</option>
+              <option value="Challenges">Challenges</option>
+              <option value="Projects">Projects</option>
+              <option value="Community">Community</option>
+              <option value="Open Source">Open Source</option>
+            </select>
+           </div>
+
+          <div id="improvements">
+            <br>
+            <input type="checkbox" id="checkbox" name="frontend" value="Front-end"><label for="frontend"> Front-end Projects</label><br>
+            <input type="checkbox" id="checkbox" name="backend" value="Back-end"><label for="backend"> Back-end Projects</label><br>
+            <input type="checkbox" id="checkbox" name="datavisualization" value="Data-Visualization"><label for="datavisualization"> Data Visualization</label><br>
+            <input type="checkbox" id="checkbox" name="challenges" value="Challenges"><label for="challenges"> Challenges</label><br>
+          </div>
+
+          <div class="form-group">
+            <label for="comment">Any comments or suggestions?</label>
+            <textarea placeholder="Enter your comment here..." class="form-control" rows="5" id="comment"></textarea>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
